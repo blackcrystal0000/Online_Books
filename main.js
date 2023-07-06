@@ -40,3 +40,18 @@ document.getElementById('books-list').innerHTML = booksList;
         })
         .catch(error => console.error('Error:', error));
 }
+
+function likeBook(event) {
+    event.target.classList.toggle('liked');
+}
+
+function displayCategoryChart(books) {
+    let categories = {};
+    books.forEach(function(book) {
+        if (book.subject) {
+            book.subject.forEach(function(category) {
+                categories[category] = (categories[category] || 0) + 1;
+            });
+        }
+    });
+}
