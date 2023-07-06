@@ -34,5 +34,9 @@ function fetchBooks(searchText) {
             } else {
                 booksList = "<p>No results found</p>";
             }
-        }
-    )}
+        
+document.getElementById('books-list').innerHTML = booksList;
+            displayCategoryChart(data.docs);
+        })
+        .catch(error => console.error('Error:', error));
+}
