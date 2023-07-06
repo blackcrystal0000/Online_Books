@@ -54,4 +54,11 @@ function displayCategoryChart(books) {
             });
         }
     });
+ let output = '<h2>Books by Category</h2>';
+    output += '<ul>';
+    for (let category in categories) {
+        output += `<li>${category}: ${categories[category]}</li>`;
+    }
+    output += '</ul>';
+    document.getElementById('category-chart').innerHTML = output;
 }
