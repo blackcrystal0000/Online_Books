@@ -20,3 +20,27 @@ header {
 h1 {
     color: white;
 }
+
+#header .container nav ul li a {
+    text-decoration: none;
+}
+#search-input {
+    margin-right: 10px;
+    border: none;
+    border-radius: 15px;
+    padding: 10px;
+    outline: none;
+}
+
+#search-btn {
+    border: none;
+    border-radius: 15px;
+    padding: 10px;
+    background-color: #efefef;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+#search-btn:hover {
+    background-color: #ddd;
+}
