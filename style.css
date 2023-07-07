@@ -44,3 +44,45 @@ h1 {
 #search-btn:hover {
     background-color: #ddd;
 }
+
+#books-list, #book-details, #category-chart {
+    width: 80%;
+    margin: 20px;
+    background-color: white;
+    color: black;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 2px 10px 0 rgba(0,0,0,0.1);
+}
+
+.book {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #efefef;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+
+.book:hover {
+    background-color: #ddd;
+}
+
+.like-btn {
+    color: gray;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.like-btn:hover {
+    color: red;
+}
+
+.like-btn.liked {
+    color: red;
+}
+
+@keyframes gradient {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
