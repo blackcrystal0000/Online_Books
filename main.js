@@ -14,6 +14,11 @@ document.getElementById('search-input').addEventListener('keypress', function(e)
     }
 });
 
+document.getElementById('search-btn').addEventListener('touchstart', function(){
+    let searchText = document.getElementById('search-input').value;
+    fetchBooks(searchText);
+});
+
 function fetchBooks(searchText) {
     fetch(`https://openlibrary.org/search.json?title=${searchText}`)
         .then(response => response.json())
